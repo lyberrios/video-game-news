@@ -8,6 +8,7 @@
     --shadow: rgba(0, 0, 0, 0.10);
     --bg-marquee: #eeee;
     --mt: #7c7c7c;
+    --title-color: #333;
 }
 
 /* General styles*/
@@ -100,7 +101,70 @@ body{
 /* best moments style highlights*/
 .layout__highlights{
     grid-area: high;
+    margin-bottom: 3rem;
 }
+
+.highlights__posts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.highlights__post{
+    flex-basis: 33%;
+    height: 100%;
+    border-bottom: 1px solid var(--marquee-tex);
+}
+.highlights__image{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.highlights__img{
+   
+    transition: all 300ms ease;
+}
+
+.highlights__category{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.highlights__category:hover{
+    background-color: var(--bg-navbar-color);
+}
+
+.highlights__name-category{
+    display: block;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.highlights__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.highlights__link{
+    color: (var(--title-color));
+    transition: all 300ms;
+}
+
+.highlights__title:hover > .highlights__link{
+    color: var(--secondary-color);
+}
+
 /* Videos Style*/
 .layout__videos{
     grid-area: videos;
@@ -445,7 +509,8 @@ background-color: var(--hover-sublist-item);
     transition: all 300ms ease-in-out;
 }
 
-.slider__container:hover .slider__img{
+.slider__container:hover .slider__img,
+.highlights__image:hover{
     transform: scale(1.1);
 }
 
@@ -479,3 +544,32 @@ background-color: var(--hover-sublist-item);
     text-shadow: 1px 1px 3px var(--bg-navbar-color);
 }
 
+/* subheader styles*/
+.news__subheader,
+.games__subheader,
+.login__subheader,
+.posts__subheader,
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader{
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--bg-navbar-color);
+    padding: 0.5rem;
+    align-content: center;
+}
+
+.subheader__title,
+.news__title,
+.list-header__title,
+.last-reviews__link-title{
+    display: inline;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    white-space: nowrap;
+}
