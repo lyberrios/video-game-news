@@ -174,16 +174,18 @@ body{
 }
 
 .highlights__author, 
-.highlights__date,
 .main-video__author,
-.main-video__date{
-    font-weight: 700;
-    font-size: 1.1rem;
+.video__author
+{
+    font-size: 1rem;
     text-transform: uppercase;
     color: var(--secondary-color);
 }
 
-.highlights__date{
+.highlights__date,
+.main-video__date,
+.video__date{
+    
     line-height: 1.5;
     color: var(--mt);
 }
@@ -251,6 +253,10 @@ body{
 /* carousel style*/
 .layout__carousel-games{
     grid-area: carousel;
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 6rem;
+    background-color: var(--bg-navbar-color);
 }
 /* main style*/
 .layout__main{
@@ -459,7 +465,8 @@ background-color: var(--hover-sublist-item);
     height: 100%;
     width: auto;
 }
-.carousel__container-rating{
+.carousel__container-rating,
+.circle__mark{
     position: absolute;
     bottom:2rem;
     left: 50%;
@@ -468,7 +475,8 @@ background-color: var(--hover-sublist-item);
     height: 4.8rem;
 }
 
-.container-rating__circle{
+.container-rating__circle,
+.circle__mark{
     width: 100%;
     height: 100%;
     padding: 0.2rem;
@@ -476,7 +484,8 @@ background-color: var(--hover-sublist-item);
     background-color: var(--secondary-color);
 }
 
-.container-rating__border{
+.container-rating__border,
+.circle__mark{
     width: 100%;
     height: 100%;
     border-radius: 3.2rem;
@@ -486,7 +495,9 @@ background-color: var(--hover-sublist-item);
     align-items: center;
 }
 
-.container-rating__mark{
+.container-rating__mark,
+.circle__mark{
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--main-color);
 }
@@ -661,7 +672,7 @@ background-color: var(--hover-sublist-item);
 }
 .videos__main-video{
     flex-basis: 65%;
-    padding: 3rem;
+
 }
 
 .main-video__yt-video{
@@ -695,4 +706,112 @@ background-color: var(--hover-sublist-item);
 
 .main-video__info-container a{
     display: inline;
+}
+
+.videos__list{
+    flex-basis: 35%;
+}
+
+.videos__video{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bg-marquee);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.video__detail{
+    flex-basis: 75%;
+}
+
+.video__title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.video__title:hover > .video__link{
+    color: var(--secondary-color);
+}
+
+.video__link{
+    color: var(--title-color);
+    transition: all 300ms ease;
+}
+.video__info{
+    display: flex;
+    gap: 1rem;
+}
+.video__image{
+
+    overflow: hidden;
+}
+.video__img{
+    transition: all 300ms ease;
+}
+
+.video__image:hover .video__img{
+    transform: scale(1.1);
+}
+/*carousel style 2*/
+.carousel-games__list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+.carousel-games__item{
+    position: relative;
+    overflow: hidden;
+}
+.carousel-games__img{
+    width: 100%;
+}
+.carousel-games__rating{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+.carousel-games__info{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    padding: 0 1rem;
+    transition: all 300ms;
+}
+.carousel-games__category{
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px var(--title-color);
+    color: var(--main-color);
+    transition: all 300ms ease;
+}
+
+.carousel-games__category:hover{
+    color: var(--secondary-color);
+}
+
+.carousel-games__line{
+    height: 0.2rem;
+    width: 4rem;
+    margin: 0.4rem auto;
+    background-color: var(--secondary-color);
+}
+
+.carousel-games__title{
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px var(--title-color);
+}
+
+.carousel-games__link{
+    color: var(--main-color);
+    transition: all 300ms ease;
+}
+
+.carousel-games__title:hover, .carousel-games__link{
+    font-variant: var(--secondary-color);
 }
