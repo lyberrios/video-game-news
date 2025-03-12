@@ -173,7 +173,10 @@ body{
     margin: 1rem 0;
 }
 
-.highlights__author, .highlights__date{
+.highlights__author, 
+.highlights__date,
+.main-video__author,
+.main-video__date{
     font-weight: 700;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -206,7 +209,8 @@ body{
 }
 
 .footer-post__views, 
-.footer-post__comments{
+.footer-post__comments,
+.main-video__views{
     display: inline-block;
     font-weight: 400;
     font-size: 1.1rem;
@@ -217,7 +221,9 @@ body{
 }
 
 .footer-post__views > .fa-solid, 
-.footer-post__comments > .fa-solid{
+.footer-post__comments > .fa-solid,
+.main-video__views > .fa-solid,
+.main-video__coments > .fa-solid{
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
@@ -240,6 +246,7 @@ body{
 /* Videos Style*/
 .layout__videos{
     grid-area: videos;
+    width: 100%;
 }
 /* carousel style*/
 .layout__carousel-games{
@@ -644,4 +651,48 @@ background-color: var(--hover-sublist-item);
     color: var(--main-color);
     background-color: var(--secondary-color);
     white-space: nowrap;
+}
+
+/* Videos Style*/
+.videos__container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.videos__main-video{
+    flex-basis: 65%;
+    padding: 3rem;
+}
+
+.main-video__yt-video{
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+}
+
+.main-video__yt-video > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.main-video__title{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.main-video__info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--bg-marquee);
+}
+
+.main-video__info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.main-video__info-container a{
+    display: inline;
 }
