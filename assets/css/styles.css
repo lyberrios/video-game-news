@@ -176,7 +176,8 @@ body{
 .highlights__author, 
 .main-video__author,
 .video__author,
-.main-post__container-author
+.main-post__container-author,
+.news__author
 {
     font-size: 1rem;
     text-transform: uppercase;
@@ -186,7 +187,8 @@ body{
 .highlights__date,
 .main-video__date,
 .video__date,
-.main-post__date{
+.main-post__date,
+.news__date{
     
     line-height: 1.5;
     color: var(--mt);
@@ -613,7 +615,8 @@ background-color: var(--hover-sublist-item);
 
 .slider__container:hover .slider__img,
 .highlights__image:hover,
-.main-post__img:hover{
+.main-post__img:hover,
+.news__image:hover .news__img{
     transform: scale(1.1);
 }
 
@@ -704,7 +707,10 @@ background-color: var(--hover-sublist-item);
     margin-bottom: 1rem;
 }
 
-.main-video__info{
+.main-video__info,
+.main-post__meta,
+.news__data
+{
     display: flex;
     justify-content: space-between;
     padding-bottom: 2rem;
@@ -834,7 +840,6 @@ background-color: var(--hover-sublist-item);
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--bg-marquee);
 }
@@ -892,14 +897,6 @@ background-color: var(--hover-sublist-item);
     transition: all 300ms ease-in-out;
 }
 
-.main-post__meta{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-
-}
-
 .main-post__description{
     font-size: 1.3rem;
     font-size: var(--title-color);
@@ -909,4 +906,49 @@ background-color: var(--hover-sublist-item);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+/* Noticias*/
+.news__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: 4rem;
+    margin-bottom: 6rem;
+}
+
+.news__post{
+    display: flex;
+    gap: 1rem;
+    flex-basis: calc(50% - 2rem)
+}
+.news__image{
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.news__img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.news__detail{
+    width: 75%;
+}
+
+.news__title-post{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.news__link-title{
+    color: var(--title-color);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-title:hover{
+    color: var(--secondary-color);
+}
+.news__data{
+    justify-content: left;
+    gap: 1rem;
 }
