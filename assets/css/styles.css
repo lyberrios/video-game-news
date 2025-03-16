@@ -196,7 +196,8 @@ body{
 .video__author,
 .main-post__container-author,
 .news__author,
-.post__author
+.post__author,
+.recent__author
 {
     font-size: 1rem;
     text-transform: uppercase;
@@ -225,7 +226,8 @@ body{
 .highlights__footer-post,
 .footer-post__container,
 .footer-info__container,
-.post__footer-post{
+.post__footer-post,
+.recent__meta-info{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
@@ -236,7 +238,8 @@ body{
 
 .footer-post__container,
 .footer-info__container,
-.footer-post__container{
+.footer-post__container,
+.recent__meta-info{
     gap: 1rem;
 }
 
@@ -244,13 +247,15 @@ body{
 .footer-post__comments,
 .main-video__views,
 .main-post__views,
-.main-post__comments{
+.main-post__comments,
+.recent__views,
+.recent__comments{
     display: inline-block;
     font-weight: 400;
     font-size: 1.1rem;
     color: var(--mt);
 }
-
+.recent__comments > a,
 .footer-post__comments > a{
     display: inline;
 }
@@ -260,7 +265,9 @@ body{
 .main-video__views > .fa-solid,
 .main-video__coments > .fa-solid,
 .main-post__comments > .fa-solid,
-.main-post__views > .fa-solid{
+.main-post__views > .fa-solid,
+.recent__views > .fa-solid,
+.recent__comments > .fa-solid{
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
@@ -642,7 +649,8 @@ background-color: var(--hover-sublist-item);
 .main-post__img:hover,
 .news__image:hover .news__img,
 .game__img:hover,
-.post__img:hover{
+.post__img:hover,
+.recent__img:hover{
     transform: scale(1.1);
 }
 
@@ -683,7 +691,8 @@ background-color: var(--hover-sublist-item);
 .posts__subheader,
 .videos__subheader,
 .highlights__subheader,
-.last-reviews__subheader{
+.last-reviews__subheader,
+.recent__list-header{
     width: 100%;
     height: 3.5rem;
     margin-bottom: 3rem;
@@ -1037,7 +1046,8 @@ background-color: var(--hover-sublist-item);
     width: 100%;
     margin-bottom: 3rem;
 }
-.posts__list-header{
+.posts__list-header,
+.recent__list-header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1087,9 +1097,7 @@ background-color: var(--hover-sublist-item);
 
 .form__label{
     font-weight: 500;
-   
 }
-
 
 .form__input{
     width: 100%;
@@ -1101,7 +1109,6 @@ background-color: var(--hover-sublist-item);
 .form__container-remember .form__input{
     width: auto;
     display: inline;
-  
 }
 
 .form__submit{
@@ -1182,4 +1189,81 @@ background-color: var(--hover-sublist-item);
 }
 .social__item--yellow{
     background-color: var(--linkedin);
+}
+/*Lastest tweets*/
+.aside__tweets{
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    background-color: var(--twitter);
+    color: var(--main-color);
+}
+
+.tweets__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.tweets__header .fa-brands{
+    margin-right: 1rem;
+}
+.tweets__title{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.tweets__content{
+    margin-bottom: 3rem;
+}
+/* post recent styles*/
+.aside__recent{
+    margin-bottom: 3rem;
+}
+.aside__recent .list-header__title{
+    display: inline-block;
+}
+.aside__recent .list-header--small{
+    background: none;
+}
+.recent__list-post{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.recent__item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.recent__container-img{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.recent__img{
+    width: 100%;
+    transition: all 300ms ease;
+}
+.recent__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.recent__link-title{
+    color: var(--title-color);
+    transition: all 300ms ease;
+}
+.recent__link-title:hover{
+    color: var(--secondary-color);
+}
+.recent__detail{
+    width: 100%;
+}
+.recent__container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
