@@ -1286,3 +1286,67 @@ background-color: var(--hover-sublist-item);
 .last-reviews__link-title{
     font-size: 1.12rem;
 }
+
+.aside__last-reviews .last-reviews__list-header{
+    display: flex;
+    gap: 0.5rem;
+}
+.last-reviews__list-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.last-reviews__item{
+    width: 100%;
+}
+.list-reviews__container-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list-reviews__title{
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.list-reviews__title-link{
+    color: var(--title-color);
+    transition: all 300ms ease-in-out;
+}
+.list-reviews__title-link:hover{
+    color: var(--secondary-color);
+}
+.list-reviews__mark{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+.list-reviews__progressbar{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--bg-navbar-color);
+    margin-top: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.list-reviews__bar{
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+}
+.list-reviews__bar--bar1{
+    width: 75%;
+}
+.list-reviews__bar--bar2{
+    width: 65%;
+}
+.list-reviews__bar--bar3{
+    width: 81%;
+}
+.list-reviews__bar--bar4{
+    width: 55%;
+}
+.list-reviews__bar--bar5{
+    width: 90%;
+}
