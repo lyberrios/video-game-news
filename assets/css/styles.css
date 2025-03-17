@@ -1350,3 +1350,19 @@ background-color: var(--hover-sublist-item);
 .list-reviews__bar--bar5{
     width: 90%;
 }
+/* Main button style*/
+.posts__read-more{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0.4rem;
+    border: 1px solid var(--bg-navbar-color);
+    transition: all 300ms ease-in-out;
+}
+.posts__read-more:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-color: var(--secondary-color);
+}
