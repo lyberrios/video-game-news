@@ -652,7 +652,8 @@ background-color: var(--hover-sublist-item);
 .game__img:hover,
 .post__img:hover,
 .recent__img:hover,
-.footer-list-popular__img{
+.footer-list-popular__img:hover,
+.fslider__img:hover{
     transform: scale(1.1);
 }
 
@@ -1490,4 +1491,56 @@ background-color: var(--hover-sublist-item);
 .footer-list-popular__views:hover,
 .footer-list-popular__comments:hover{
     color: var(--secondary-color);
+}
+
+.footer__right-container{
+    flex-basis: 32%;
+}
+.footer_fslider{
+    overflow: hidden;
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+}
+.fslider__img{
+    width: 100%;
+    height: 100%;
+    transition: all 340ms ease-in-out;
+}
+.fslider__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+}
+.fslider__info:hover{
+    color: var(--secondary-color);
+}
+.fslider__separator{
+    width: 30rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    
+}
+.fslider__title{
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px var(--title-color);
+}
+.footer__description{
+    padding: 2.3rem;
+    color: var(--main-color);
+    background-color: var(--footer-down);
+}
+
+.footer__text{
+    width: 55%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    white-space: nowrap;
 }
