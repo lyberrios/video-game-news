@@ -206,3 +206,33 @@
         margin: 0 auto;
     }
 }
+@media (max-width:775px){
+    /*layout*/
+    .layout {
+        width: 57%;
+        min-width: 57rem;
+        margin: 0 auto;
+    }
+    /*Slider*/
+    .slider__container--slider5{
+        width: 200%;
+        height: 15rem;
+    }
+    .slider__container--slider4{
+        width: 100%;
+        height: 15rem;
+    }
+    .slider__container--slider2{
+        width: 100%;
+        height: 11.8rem;
+    }
+    .slider__container--slider3{
+        width: 100%;
+        height: 26.8rem;
+    }
+    .footer__container{
+        width: 52%;
+        min-width: 52rem;
+        flex-direction: column;
+    }
+}
