@@ -236,3 +236,90 @@
         flex-direction: column;
     }
 }
+@media (max-width:595px){
+    /*layout*/
+    .layout {
+        width: 35%;
+        min-width: 35rem;
+        margin: 0 auto;
+    }
+    /*Slider*/
+    .layout__slider {
+        grid-template-areas: "slider1 slider1 slider1 slider1"
+            "slider2 slider2 slider2 slider2"
+            "slider3 slider3 slider3 slider3"
+            "slider4 slider4 slider4 slider4"
+            "slider5 slider5 slider5 slider5";
+        column-gap: 0;
+        grid-template-columns: 100%;
+    }
+    .slider__container--slider5,
+    .slider__container--slider4,
+    .slider__container--slider2,
+    .slider__container--slider3{
+        width: 100%;
+        height: auto;
+    }
+    /*Highlights*/
+    .highlights__posts{
+        flex-direction: row;
+    }
+    .highlights__post{
+        width: 100%;
+    }
+    /*video*/
+    .videos__list{
+        flex-direction: column;
+    }
+    .videos__video{
+        width: 100%;
+    }
+    .main-video__yt-video{
+        height: 21rem; 
+    }
+    /*NEWS*/
+    .news__main-post{
+        flex-direction: column;
+    }
+    .news__list{
+        flex-direction: column;
+    }
+    /*games*/
+    .games__container{
+        flex-direction: column;
+    }
+    .games_game{
+        width: 100%;
+    }
+    /*POSTS*/
+    .posts__container{
+        flex-direction: column;
+    }
+    .posts__post{
+        flex-basis: 100%;
+    }
+    .post__img{
+        width: 100%;
+    }
+  
+    .footer__container{
+        width: 30%;
+        min-width: 30rem;
+    }
+    .footer_text{
+        width: 100%;
+    }
+}
+@media(max-width: 350px){
+/*layout*/
+.layout {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+}
+/*Footer*/
+.footer__container{
+    width: 100%;
+    min-width: auto;
+}
+}
