@@ -78,6 +78,12 @@
         font-size: 1.3rem;
         text-transform: uppercase;
         color: var(--main-color);
+        transition: all 300ms ease-in-out;
+    }
+
+    .mobile__link:hover,
+    .mobile-submenu__link:hover{
+        color: var(--secondary-color);
     }
 
     .mobile__icon {
